@@ -1,0 +1,34 @@
+# -*- coding: utf-8 -*-
+
+module My
+  module Config
+    module Abema
+      def self.bearer
+        "bearer hogehoge"
+      end
+
+      def self.keywords
+        [
+         {keyword: "まつもと けいすけ", notification: true}, 
+         {keyword: "水島努", notification: false}, 
+         {keyword: "ジョジョ", notification: false}, 
+         {keyword: "フミカネ", notification: true}, 
+         {keyword: "まんがタイムきらら", notification: false}, 
+         {keyword: "動画工房", notification: false}
+        ]
+      end
+      
+      def self.channels
+        [
+         "anime"
+        ]
+      end
+      
+      def self.ignores
+        [
+         {keyword: "おしえてアベマくん"}
+        ]
+      end
+    end
+  end
+end

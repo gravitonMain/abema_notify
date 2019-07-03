@@ -1,0 +1,15 @@
+# -*- coding: utf-8 -*-
+
+module My
+  module Config
+    module Slack
+      def self.token
+        "hoge-111111111111-222222222222-333333333333-hugahuga"
+      end
+      
+      def self.channel
+        "test"
+      end
+    end
+  end
+end
